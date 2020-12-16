@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 100vh; */
+    background-color: #852222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* dadi */
+
+.dado {
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.pallino {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.col {
+    height: calc(100% / 3);
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+.hidden {
+    display: none;
+}
