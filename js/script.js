@@ -33,6 +33,22 @@ if (giocatore == 1) {
     var element = document.getElementById("seiGiocatore"); element.classList.remove("hidden");
 }
 
+if (computer == 1) {
+    var robot = document.getElementById("unoComputer");
+    robot.classList.remove("hidden");
+} else if (computer == 2) {
+    var robot = document.getElementById("dueComputer");
+    robot.classList.remove("hidden");
+} else if (computer == 3) {
+    var robot = document.getElementById("treComputer"); robot.classList.remove("hidden");
+} else if (computer == 4) {
+    var robot = document.getElementById("quattroComputer"); robot.classList.remove("hidden");
+} else if (computer == 5) {
+    var robot = document.getElementById("cinqueComputer"); robot.classList.remove("hidden");
+} else if (computer == 6) {
+    var robot = document.getElementById("seiComputer"); robot.classList.remove("hidden");
+}
+
 }
 );
 
@@ -47,5 +63,34 @@ function() {
     var nascosto = document.getElementById('quattroGiocatore');nascosto.classList.add("hidden");
     var nascosto = document.getElementById('cinqueGiocatore');nascosto.classList.add("hidden");
     var nascosto = document.getElementById('seiGiocatore');nascosto.classList.add("hidden");
+
+    var nascosto = document.getElementById('unoComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('dueComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('treComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('quattroComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('cinqueComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('seiComputer');nascosto.classList.add("hidden");
+
+}
+);
+
+var reset = document.getElementById("resetBottone");
+reset.addEventListener('click',
+function() {
+    var giocatore = document.getElementById('dadoGiocatore').innerHTML = "";
+    var computer = document.getElementById('dadoComputer').innerHTML = "";
+    var nascosto = document.getElementById('unoGiocatore');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('dueGiocatore');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('treGiocatore');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('quattroGiocatore');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('cinqueGiocatore');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('seiGiocatore');nascosto.classList.add("hidden");
+
+    var nascosto = document.getElementById('unoComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('dueComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('treComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('quattroComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('cinqueComputer');nascosto.classList.add("hidden");
+    var nascosto = document.getElementById('seiComputer');nascosto.classList.add("hidden");
 }
 );
